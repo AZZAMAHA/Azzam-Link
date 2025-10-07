@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>The Wonder of You – Elvis Presley</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <style>
+      :root {
+      --bg-img: url("https://wallpapercave.com/wp/wp10292604.png");
+}
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.9;
+      padding: 40px;
+      color: #222;
+      max-width: 900px;
+      margin: auto; 
+
+  color:var(--text);
+
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;        /* biar nutup full layar */
+  background-position: center;   /* posisi tengah */
+  background-attachment: scroll; /* ikut gerak pas discroll */
+  min-height: 100vh;
+
+  line-height:1.7;
+  text-align: justify;
+}
+    .back-btn {
+      display: inline-block;
+      margin: 20px 40px;
+      padding: 10px 20px;
+      background: #2c7be5;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #1a5bbf;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      text-align: justify;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .title img {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #2c7be5;
+    }
+    h2 {
+      font-size: 1.4em;
+      color: #555;
+      text-align: center;
+    }
+
+    .section {
+      margin: 30px 0 15px 0;
+      font-style: italic;
+      text-align: center;
+      color: #444;
+      position: relative;
+    }
+    .section::before,
+    .section::after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background: #2c7be5;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    .chord {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 600;
+      color: #fff;
+      background: #2c7be5;
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      font-size: 0.9em;
+      margin-bottom: -0.6em;
+      margin-top: 0.3em;
+    }
+    .lyrics {
+      font-size: 1.1em;
+      color: #2c3e50;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .line {
+      margin-bottom: 0.8em;
+    }
+    a {
+      color: #c0392b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:history.back()" class="back-btn">← Kembali</a>
+<div class="box">
+  <div class="title">
+    <h1>The Wonder of You</h1>
+    <img src="https://comicvine.gamespot.com/a/uploads/original/11143/111433664/7741321-wandaobau.png" alt="Wonder of U JoJo">
+  </div>
+  <h2>Elvis Presley</h2>
+
+  <!-- ================= Lyrics ================= -->
+  <div class="section">Verse 1</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">When no one else can un-</span><span class="chord">Em</span><span class="lyrics">der-stand me,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">When eve-ry-thing I do is </span><span class="chord">D</span><span class="lyrics">wrong,</span></div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">You give me hope and con-so-</span><span class="chord">Em</span><span class="lyrics">la-tion,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">You give me strength to car-</span><span class="chord">D</span><span class="lyrics">ry on.</span></div>
+
+  <div class="section">Verse 2</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">And you're al-ways there to </span><span class="chord">Em</span><span class="lyrics">lend a hand,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">In ev-ery-thing I do,</span></div>
+  <div class="line"><span class="chord">D</span><span class="lyrics">That's the won-der,</span></div>
+  <div class="line"><span class="chord">C</span><span class="lyrics">The won-der of </span><span class="chord">G</span><span class="lyrics">you.</span></div>
+
+  <div class="section">Chorus</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">And when you smile the world is</span><span class="chord">Bm</span><span class="lyrics">bright-er,</span></div>
+  <div class="line"><span class="chord">C</span><span class="lyrics">You touch my hand and I'm a</span><span class="chord">D</span><span class="lyrics">king,</span></div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">Your kiss to me is worth a</span><span class="chord">Bm</span><span class="lyrics">for-tune,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">Your love for me is ev-</span><span class="chord">D</span><span class="lyrics">ery-thing.</span></div>
+
+  <div class="section">Verse 3</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">I guess I'll nev-er know the</span><span class="chord">Em</span><span class="lyrics">rea-son why,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">You love me as you</span><span class="chord">D</span><span class="lyrics">do,</span></div>
+  <div class="line"><span class="chord">D</span><span class="lyrics">That's the won-der,</span></div>
+  <div class="line"><span class="chord">C</span><span class="lyrics">The won-der of </span><span class="chord">G</span><span class="lyrics">you.</span></div>
+
+  <div class="section">Chorus (ulang)</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">And when you smile the world is</span><span class="chord">Bm</span><span class="lyrics">bright-er,</span></div>
+  <div class="line"><span class="chord">C</span><span class="lyrics">You touch my hand and I'm a</span><span class="chord">D</span><span class="lyrics">king,</span></div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">Your kiss to me is worth a</span><span class="chord">Bm</span><span class="lyrics">for-tune,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">Your love for me is ev-</span><span class="chord">D</span><span class="lyrics">ery-thing.</span></div>
+
+  <div class="section">Ending</div>
+  <div class="line"><span class="chord">G</span><span class="lyrics">I guess I'll nev-er know the</span><span class="chord">Em</span><span class="lyrics">rea-son why,</span></div>
+  <div class="line"><span class="chord">Am</span><span class="lyrics">You love me as you</span><span class="chord">D</span><span class="lyrics">do,</span></div>
+  <div class="line"><span class="chord">D</span><span class="lyrics">That's the won-der,</span></div>
+  <div class="line"><span class="chord">C</span><span class="lyrics">The won-der of </span><span class="chord">G</span><span class="lyrics">you.</span></div>
+
+  <hr>
+  <p style="text-align:center">
+
+  </p>
+</div>
+</body>
+</html>
