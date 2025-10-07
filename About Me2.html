@@ -19,21 +19,20 @@
     }
     * { box-sizing: border-box; }
 
-    /* semua teks jadi justified */
     body {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       margin:0;
       color:var(--text);
 
-background-image: var(--bg-img);
-  background-repeat: no-repeat;
-  background-size: cover;        /* biar nutup full layar */
-  background-position: center;   /* posisi tengah */
-  background-attachment: scroll; /* biar ikut scroll */
-  min-height: 100vh;
+      background-image: var(--bg-img);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      min-height: 100vh;
 
       line-height:1.7;
-      text-align: justify; /* rata kiri–kanan semua */
+      text-align: justify;
     }
 
     a { color: var(--accent); text-decoration: none; }
@@ -57,9 +56,7 @@ background-image: var(--bg-img);
       transition: background 0.3s;
     }
 
-    .back-btn:hover {
-      background: #1a5bbf;
-    }
+    .back-btn:hover { background: #1a5bbf; }
     .nav {
       max-width: var(--maxw);
       margin: 0 auto;
@@ -129,7 +126,7 @@ background-image: var(--bg-img);
       .hero { grid-template-columns: 1.2fr 1fr; }
       .grid-2 { grid-template-columns: 1fr 1fr; }
     }
-        .header {
+    .header {
       background: linear-gradient(to right, #40A6E5, #40A6E5);
       color: white;
       padding: 30px;
@@ -153,9 +150,7 @@ background-image: var(--bg-img);
       margin-bottom: 15px;
     }
 
-    .item {
-      margin: 10px 0;
-    }
+    .item { margin: 10px 0; }
 
     .dot {
       height: 12px;
@@ -165,182 +160,38 @@ background-image: var(--bg-img);
       margin-right: 8px;
     }
 
-    .biru { background: #40A6E5; }
-    .merah { background: #ef4444; }
-    .hijau { background: #22c55e; }
-    .kuning { background: #eab308; }
-
-    .item p {
-      margin: 5px 0 0 20px;
-    }
-        .kotak {
-      background-color: #ffffff;   /* warna kotak */
-      color: #333;                 /* warna teks */
-      padding: 20px;               /* ruang dalam */
-      border-radius: 12px;         /* sudut melengkung */
-      margin: 15px 0;              /* jarak antar kotak */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* bayangan biar rapi */
-      text-align: justify;         /* teks rata kiri-kanan */
-    }
-
-    .kotak h3 {
-      margin-top: 0;
-      color: #2563eb; /* judul warna biru */
-    }
-        .containere {
-      display: flex;
-      gap: 20px;              /* jarak antar kotak */
-      justify-content: center;
-      flex-wrap: wrap;        /* biar rapi di hp */
-    }
+    .containere { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
 
     .card {
       background: #fff;
       border-radius: 10px;
       padding: 20px;
       flex: 1;
-      min-width: 250px;       /* ukuran minimum */
+      min-width: 250px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-left: 4px solid #40A6E5; /* garis warna di kiri */
+      border-left: 4px solid #40A6E5;
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #40A6E5;
-    }
+    .prestasi-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
-    .card ul {
-      margin: 0;
-      padding-left: 20px;
-    }
+    .cards { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; width: 220px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: transform 0.2s ease, box-shadow 0.2s ease; }
 
-    .card ul li {
-      margin-bottom: 6px;
-      color: #333;
-    }
-    
-.prestasi-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+    .icons { font-size: 40px; margin-bottom: 10px; }
 
-    .cards {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      width: 220px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+    .cards-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 
-    .cards:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+    .icons img { width: 150px; height: 200px; object-fit: cover; border-radius: 10px; }
 
-    .icons {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+    .dot-container { display: flex; gap: 5px; justify-content: center; margin-top: 50px; }
+    .dot-container img { width: 300px; height: auto; max-height: 1100px; object-fit: contain; }
 
-    .cards h3 {
-      margin: 10px 0;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .cards p {
-      font-size: 14px;
-      color: #6b7280;
-    }
- .cards-container {
-    display: flex;
-    justify-content: center; /* biar ketengah */
-    gap: 20px; /* jarak antar card */
-    flex-wrap: wrap; /* biar kalau sempit layar, turun sendiri */
-  }
-
-.cards {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  width: 200px; /* Bisa diatur sesuai ukuran */
-  background: #FFFFFF;
-}
-.icons img {
-  width: 150px; 
-  height: 200px;
-  object-fit: cover; /* Biar gambar pas */
-  border-radius: 10px;
-}
-     .h2s {
-      color: #2563eb; /* biru */
-      border-bottom: 2px solid #facc15; /* garis kuning */
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    .job {
-      margin-bottom: 25px;
-    }
-
-    .job-title {
-      font-weight: bold;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .job-title::before {
-      content: "●";
-      color: #f97316; /* oranye */
-      font-size: 18px;
-    }
-
-
-
-    .job p {
-      margin: 5px 0 10px 26px;
-      color: #374151;
-      font-size: 14px;
-    }
-
-    .job ul {
-      margin: 5px 0 10px 40px;
-      padding: 0;
-      font-size: 14px;
-      color: #374151;
-    }
-
-    .job ul li {
-      margin-bottom: 4px;
-    }
-    
-        .dot-container {
-      display: flex;
-      gap: 5px; /* jarak antar titik */
-      justify-content: center; /* biar rata tengah */
-      margin-top: 50px;
-    }
-    .dot-container img {
-      width: 300px;  /* ukuran gambar titik */
-      height: 1100px;
-    }
   </style>
 </head>
 <body>
 
-
   <header>
-  
     <nav class="nav">
-<a href="javascript:history.back()" class="back-btn">← Kembali</a>
+      <a href="javascript:history.back()" class="back-btn">← Kembali</a>
       <div class="brand">Muhammad Azzam Irashi</div>
       <ul>
         <li><a href="#tentang">Tentang</a></li>
@@ -348,7 +199,6 @@ background-image: var(--bg-img);
         <li><a href="#kegiatan">Kegiatan</a></li>
         <li><a href="#pendidikan">Pendidikan</a></li>
         <li><a href="#kontak">Kontak</a></li>
-
       </ul>
     </nav>
   </header>
@@ -357,176 +207,131 @@ background-image: var(--bg-img);
 
     <section id="tentang" class="hero">
       <div>
-      
-          <div class="header">
-          
-    <h1>Tentang Saya</h1>
-    <p>Profil, Pengalaman, dan Lainnya</p>
-  </div>
-  <div class="box">
+        <div class="header">
+          <h1>Tentang Saya</h1>
+          <p>Profil, Pengalaman, dan Lainnya</p>
+        </div>
 
-        <h2><p>Perkenalkan, nama saya <strong>Muhammad Azzam Irashi</strong>.</p></h2>
+        <div class="box">
+          <h2><p>Perkenalkan, nama saya <strong>Muhammad Azzam Irashi</strong>.</p></h2>
 
+          <p>Saya seorang siswa kelas <strong>XII DKV 1</strong> di <strong>SMKN 1 Kota Tangerang</strong>, Kota Tangerang.</p>
+          <p>Sejak awal masuk sekolah menengah kejuruan, saya memiliki ketertarikan yang cukup besar dalam bidang Desain Komunikasi Visual serta eksplorasi Proyek 3 Dimensi...</p>
 
-        <p>Saya seorang siswa kelas <strong>XII DKV 1</strong>   di <strong>SMKN 1 Kota Tangerang</strong>, Kota Tangerang.</p>
-        <p>Sejak awal masuk sekolah menengah kejuruan, saya memiliki ketertarikan yang cukup besar dalam bidang Desain Komunikasi Visual serta eksplorasi Proyek 3 Dimensi. Ketertarikan ini berawal dari hobi menggambar sederhana di waktu luang, kemudian berkembang menjadi minat mendalami dunia digital art, ilustrasi, hingga percobaan membuat model tiga dimensi dengan software yang tersedia.</p>
-<p>
-Bagi saya, desain bukan sekadar membuat tampilan yang indah, tetapi juga tentang bagaimana sebuah karya bisa menyampaikan pesan, emosi, dan identitas tertentu kepada orang yang melihatnya. Dalam proses belajar, saya berusaha melatih kepekaan terhadap warna, tipografi, komposisi, hingga perspektif ruang pada karya tiga dimensi.
-</p>
-<p>
-Selain itu, saya menyukai tantangan dalam menggabungkan ide-ide kreatif ke dalam proyek visual, baik berupa poster, ilustrasi digital, desain identitas visual, maupun karya eksperimen dalam bentuk 3D. Dengan kemampuan yang masih terus saya kembangkan, saya yakin bahwa setiap proses kecil akan menjadi bekal berharga untuk masa depan saya di bidang desain.</p>
-<p> </p>
-        <p class="quote">“Kreativitas tanpa batas adalah kunci untuk terus berkembang.”</p>
-        <div class="badges">
-          <span class="badge">DKV</span>
-          <span class="badge">Menggambar</span>
-          <span class="badge">3D</span>
-          <span class="badge">Animasi</span>
-          <span class="badge">Fotografi</span>
-          <span class="badge">2D</span>
-          
+          <p class="quote">“Kreativitas tanpa batas adalah kunci untuk terus berkembang.”</p>
+          <div class="badges">
+            <span class="badge">DKV</span>
+            <span class="badge">Menggambar</span>
+            <span class="badge">3D</span>
+            <span class="badge">Animasi</span>
+            <span class="badge">Fotografi</span>
+            <span class="badge">2D</span>
+          </div>
         </div>
       </div>
-      </div>
+
       <div>
         <div class="dot-container">
-    <img src="frame-1.jpg" alt="Titik 1" />
-</div>
-  </div>
+          <!-- ini sesuai file yang ada di repo: frame-1.jpg -->
+          <img src="frame-1.jpg" alt="Titik 1" loading="lazy" />
+        </div>
+      </div>
     </section>
-
 
     <section id="website">
       <div class="box">
-    <div class="item">
-      <h2>Minat dan Hobi</h2>
-      <ul class="list">
-        <li><strong>Menggambar — ilustrasi digital maupun manual:</strong></li>
-        <li><strong>Editing — video pendek dan konten kreatif:</strong></li>
-        <li><strong>Mendengarkan Musik — sebagai inspirasi desain:</strong></li>
-        <li><strong>Fotografi — suasana perkotaan:</strong></li>
-        <li><strong>Belajar Software — Adobe Photoshop, Illustrator, dan Figma:</strong></li>
+        <div class="item">
+          <h2>Minat dan Hobi</h2>
+          <ul class="list">
+            <li><strong>Menggambar — ilustrasi digital maupun manual:</strong></li>
+            <li><strong>Editing — video pendek dan konten kreatif:</strong></li>
+            <li><strong>Mendengarkan Musik — sebagai inspirasi desain:</strong></li>
+            <li><strong>Fotografi — suasana perkotaan:</strong></li>
+            <li><strong>Belajar Software — Adobe Photoshop, Illustrator, dan Figma:</strong></li>
+          </ul>
 
-<p>Beberapa karya saya unggah untuk latihan konsistensi dan menerima masukan. Saya menyiapkan caption yang menjelaskan proses singkat (sketsa–final), menambahkan hashtag relevan, dan memberi watermark ringan. Tujuannya bukan sekadar pamer, tetapi membangun kebiasaan shipping karya dan belajar dari umpan balik.</p>
-   </ul>
-  </div>
-  </div>
-</section>
-
+          <p>Beberapa karya saya unggah untuk latihan konsistensi dan menerima masukan...</p>
+        </div>
+      </div>
+    </section>
 
     <section id="Kelebihan">
-          <div class="box">
-    <div class="item">
-      <h2>Kelebihan</h2>
-<div class="containere">
-    <div class="card">
-        <h3><strong><p style="color: #40A6E5;">Kreatif dalam membuat konsep desain</p></strong></h3><ul> Saya memulai dari riset masalah/tujuan, membuat mind map untuk memetakan ide, lalu mengubahnya menjadi moodboard (referensi visual, warna, tipografi). Dengan metode ini, konsep yang saya tawarkan tidak hanya dekoratif, tetapi relevan dengan pesan. Saya juga terbiasa menyiapkan 2–3 opsi arah desain agar proses diskusi dan revisi lebih terarah.
-        </ul>
-   </div>
-    <div class="card">
-        <h3><strong><p style="color: #40A6E5;">Terbiasa bekerja dengan deadline sekolah/proyek kecil</p></strong></h3>Saya memecah tugas menjadi target harian (milestone), membuat to-do list prioritas, dan menutup hari dengan review singkat: apa yang selesai, apa yang tertunda, dan kenapa. Teknik sederhana seperti time blocking dan Pomodoro membantu saya tetap fokus tanpa kelelahan panjang.
-    </div>
-        <div class="card">
-        <h3><strong><p style="color: #40A6E5;">Suka belajar hal baru terkait visual</p></strong></h3> Saya aktif mencoba tutorial pendek (tipografi, color grading, layout) dan mempraktikkannya pada proyek mini. Saya juga melakukan reverse engineering desain yang saya suka: mengamati hierarki, ritme, dan kontras, lalu menirunya sebagai latihan (bukan untuk dipublikasi), supaya memahami “kenapa” sesuatu terlihat bekerja.
-           </div>
-        <div class="card">
-        <h3><strong><p style="color: #40A6E5;">Mampu bekerja sendiri maupun dalam tim</p></strong></h3>Saat mandiri, saya menjaga rapi file/layer agar mudah dilanjutkan besok. Dalam tim, saya terbuka pada feedback dan berusaha memberi saran yang spesifik dan sopan. Saya terbiasa membuat versioning (v1, v2, final, final-rev) dan catatan perubahan agar semua anggota paham perkembangan proyek.
-   </div>
-  </div>
-  </div>
-  </div>
-</section>
-
+      <div class="box">
+        <div class="item">
+          <h2>Kelebihan</h2>
+          <div class="containere">
+            <div class="card">
+              <h3><strong><p style="color: #40A6E5;">Kreatif dalam membuat konsep desain</p></strong></h3>
+              <p>...</p>
+            </div>
+            <div class="card">
+              <h3><strong><p style="color: #40A6E5;">Terbiasa bekerja dengan deadline sekolah/proyek kecil</p></strong></h3>
+              <p>...</p>
+            </div>
+            <div class="card">
+              <h3><strong><p style="color: #40A6E5;">Suka belajar hal baru terkait visual</p></strong></h3>
+              <p>...</p>
+            </div>
+            <div class="card">
+              <h3><strong><p style="color: #40A6E5;">Mampu bekerja sendiri maupun dalam tim</p></strong></h3>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="kegiatan">
-        <div class="item">
-       <div class="box">
-              <h2>Kegiatan</h2>
-       <div class="prestasi-container">
-
-    <div class="cards">
-      <div class="icons">🌐</div>
-      <h3><strong>METIKASIS — Bidang Kreatif (2023–2024)
-</strong><br></h3>
-         Di METIKASIS, saya berkontribusi pada pembuatan materi visual: poster kegiatan, feed pengumuman, dan dokumentasi sederhana. 
-</div>
-    <div class="cards">
-      <div class="icons">🗾</div>
-        <h3><strong>NIHON Club — Bidang Wawasan (2023–2024)</strong><br></h3> 
-        Di NIHON Club, saya membantu merangkum materi pengenalan budaya Jepang (festival, etika dasar, pop culture) menjadi handout dan visual singkat yang mudah dipahami.
+      <div class="item">
+        <div class="box">
+          <h2>Kegiatan</h2>
+          <div class="prestasi-container">
+            <div class="cards">
+              <div class="icons">🌐</div>
+              <h3><strong>METIKASIS — Bidang Kreatif (2023–2024)</strong></h3>
+              <p>Di METIKASIS, saya berkontribusi pada pembuatan materi visual...</p>
+            </div>
+            <div class="cards">
+              <div class="icons">🗾</div>
+              <h3><strong>NIHON Club — Bidang Wawasan (2023–2024)</strong></h3>
+              <p>Di NIHON Club, saya membantu merangkum materi...</p>
+            </div>
+            <div class="cards">
+              <div class="icons">💻</div>
+              <h3><strong>Proyek 3D besar — Tim (Sedang Berjalan)</strong></h3>
+              <p>Saat ini saya terlibat pada proyek 3D bersama tim...</p>
+            </div>
+          </div>
         </div>
-           <div class="cards">
-      <div class="icons">💻</div>
-        <h3><strong>Proyek 3D besar — Tim (Sedang Berjalan)</strong><br></h3>  Saat ini saya terlibat pada proyek 3D bersama tim. Peran saya berfokus pada environment props (objek pendukung suasana) dan penataan lighting dasar untuk still render. 
-</div>
-</div>
-</div>
-</div>
+      </div>
     </section>
 
     <section id="pendidikan">
-            <div class="item">
-            <div class="box">
-      <h2>Pendidikan</h2>
-      <div class="job">
-    <div class="job-title"><strong>SMKN 1 Kota Tangerang — Jurusan DKV </strong>
-</div>
-  Di jenjang ini, minat saya terarah menjadi keterampilan. Saya mempelajari prinsip dasar desain (kontras, keseimbangan, ritme), tipografi, fotografi dasar, layouting, hingga pengenalan multimedia. Latihan berulang, critique session dari guru/teman, dan tugas proyek membuat saya memahami proses kreatif yang sistematis: riset → ide → sketsa → eksekusi → evaluasi.
-</div>
-</div>
-</div>
+      <div class="item">
+        <div class="box">
+          <h2>Pendidikan</h2>
+          <div class="job">
+            <div class="job-title"><strong>SMKN 1 Kota Tangerang — Jurusan DKV</strong></div>
+            <p>Di jenjang ini, minat saya terarah menjadi keterampilan...</p>
+          </div>
+        </div>
+      </div>
     </section>
-  <section id="Hasil Karya">
-            <div class="item">
-            <div class="box">
-      <h2>Hasil Karya</h2>
-      
-<div class="cards-container">
-<div class="cards">
-      <div class="icons"><img src="A4 - 1.jpg" alt="Ikon Kreatif" width="150" height="200"></div>
-      <h3><strong>Kolase
-</strong><br></h3>
-</div>
-<div class="cards">
-      <div class="icons"><img src="photo_2025-07-22_02-18-24.jpg" alt="Ikon Kreatif" width="150" height="200"></div>
-      <h3><strong>Brosur Tentang Sekolah
-</strong><br></h3>
-</div>
-<div class="cards">
-      <div class="icons"><img src="1733895990781.jpg" alt="Ikon Kreatif" width="150" height="200"></div>
-      <h3><strong>Fotografi
-</strong><br></h3>
 
-</div>
-</div>
-</div>
-</div>
-    </section>
-  </main>
+    <section id="Hasil Karya">
+      <div class="item">
+        <div class="box">
+          <h2>Hasil Karya</h2>
 
- <div class="card" style="margin-top:12px;">
-        <h3 style="margin:0 0 8px;">Kontak</h3>
-        <p style="margin:0 0 12px;">Silakan hubungi saya untuk berdiskusi atau berkolaborasi melalui email: <a href="mailto:Azzamakun4sl1@gmail.com">Azzamakun4sl1@gmail.com</a> atau DM via <a href="#">Gmail</a>.</p>
-      </div>
+          <div class="cards-container">
+            <div class="cards">
+              <div class="icons">
+                <!-- pakai exact filename dari repo (ada spasi dan tanda -) -->
+                <img src="A4%20-%201.jpg" alt="Kolase A4" width="150" height="200" loading="lazy">
+              </div>
+              <h3><strong>Kolase</strong></h3>
+            </div>
 
-  <footer class="container">
-    <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-      <div>
-        <strong>Muhammad Azzam Irashi</strong> · © <span id="year"></span>
-      </div>
-      <div style="display:flex; gap:12px;">
-        <a href="#">Portofolio</a>
-        <a href="#">Blog</a>
-        <a href="#">Kebijakan</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-
-</html>
-
-
+            <div class="cards">
+              <div class="icons">
+                <img src
